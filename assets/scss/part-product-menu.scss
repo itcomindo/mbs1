@@ -1,0 +1,51 @@
+#part-product-menu {
+  height: 40px;
+  background-color: var(--col-pallete-2);
+  .inner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    nav {
+      width: 100%;
+
+      /* Untuk semua scrollbar di halaman */
+      ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+
+      /* Latar belakang scrollbar (Track) */
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px; /* Sedikit lengkungan pada track */
+      }
+
+      /* Pegangan (Thumb) */
+      ::-webkit-scrollbar-thumb {
+        background: var(--col-pallete-3);
+        border-radius: 5px;
+      }
+
+      ul {
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        li {
+          width: max-content;
+          margin: 0 20px;
+          a {
+            width: max-content;
+            display: block;
+            color: var(--col-primary-background);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

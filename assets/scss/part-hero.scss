@@ -1,0 +1,22 @@
+#part-hero {
+  height: calc(100vh - 180px);
+  background-color: var(--col-pallete-5);
+  //   margin-top: -40px;
+  .inner-section {
+    width: 100%;
+    padding: 0;
+    .items {
+      color: var(--col-primary-background);
+      padding: 0 20px;
+      .item {
+        &#ph-item-1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+a {
+  &.btn {
+    &.has-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4px;
+    }
+    &.bright {
+      background-color: var(--col-pallete-6);
+      color: var(--col-primary-background);
+    }
+    &.big {
+      border-radius: 7px;
+      padding: 7px 20px;
+    }
+  }
+}

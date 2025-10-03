@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// /* Untuk semua scrollbar di halaman */
+// ::-webkit-scrollbar {
+//   width: 10px; /* Lebar scrollbar vertikal */
+//   height: 2px; /* Tinggi scrollbar horizontal */
+// }
+
+// /* Latar belakang scrollbar (Track) */
+// ::-webkit-scrollbar-track {
+//   background: var(--col-pallete-4); /* Warna latar yang lebih terang */
+//   border-radius: 5px; /* Sedikit lengkungan pada track */
+// }
+
+// /* Pegangan (Thumb) */
+// ::-webkit-scrollbar-thumb {
+//   background: var(--col-pallete-3); /* Warna abu-abu gelap */
+//   border-radius: 5px; /* Lengkungan pada pegangan */
+// }
+
+// /* Pegangan (Thumb) saat di-hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555; /* Warna lebih gelap saat disentuh (hover) */
+// }
+
+body {
+  background-color: var(--col-primary-background);
+  color: var(--col-primary-text);
+  font-family: var(--font-primary-text);
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (max-width: 385px) {
+    font-size: 13px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  section,
+  .section {
+    width: 100%;
+    .inner-section {
+      width: 1366px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-right: 20px;
+      padding-left: 20px;
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.h100 {
+  height: 100%;
+}

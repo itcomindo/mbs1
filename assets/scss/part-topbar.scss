@@ -1,0 +1,13 @@
+#part-topbar {
+  height: 40px;
+  background-color: var(--col-pallete-5);
+  color: var(--col-primary-background);
+  .inner-section {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

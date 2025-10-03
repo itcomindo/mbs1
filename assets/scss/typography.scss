@@ -1,0 +1,46 @@
+:root {
+  --font-primary-text: "Roboto", sans-serif;
+  // create variable based on clamp function that use in tailwind config
+  --font-clamp-1: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
+  --font-clamp-2: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --font-clamp-3: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --font-clamp-4: clamp(3rem, 2rem + 4vw, 4rem);
+  --font-clamp-5: clamp(4rem, 3rem + 6vw, 5rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary-text);
+  margin: 0;
+  &.head {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: var(--font-clamp-3);
+}
+
+h2 {
+  font-size: var(--font-clamp-2);
+}
+
+h3 {
+  font-size: var(--font-clamp-1);
+}
+
+ul,
+ol {
+  &.lns {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+}

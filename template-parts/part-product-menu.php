@@ -21,11 +21,6 @@ defined('ABSPATH') || die('No script kiddies please!');
                 <li><a href="#">Product 6</a></li>
                 <li><a href="#">Product 7</a></li>
                 <li><a href="#">Product 8</a></li>
-                <li><a href="#">Product 9</a></li>
-                <li><a href="#">Product 10</a></li>
-                <li><a href="#">Product 11</a></li>
-                <li><a href="#">Product 12</a></li>
-                <li><a href="#">Product 13</a></li>
             </ul>
         </nav>
     </div>

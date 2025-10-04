@@ -12,9 +12,14 @@ function mm_hero_item_text()
 {
 ?>
     <div id="ph-item-1" class="item text-slide">
-        <h1 class="head medium">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus!</p>
-        <a class="btn big btn-orange" href="/"><i class="fab fa-whatsapp"></i> Learn More</a>
+        <div class="photo">
+            <img src="<?php echo esc_url(MBS_URL . '/assets/images/worker.avif'); ?>" alt="PT MBS">
+        </div>
+        <div class="content">
+            <h1 class="head medium">Building dreams, crafting futures.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus!</p>
+            <a class="btn big btn-orange" href="/"><i class="fab fa-whatsapp"></i> Learn More</a>
+        </div>
     </div>
 <?php
 }
@@ -75,10 +80,12 @@ function mm_hero_item_video_2()
                     <?php echo mm_hero_item_text(); ?>
                 </div>
                 <div class="swiper-slide">
-                    <?php echo mm_hero_item_video_1(); ?>
+                    <?php echo mm_hero_item_video_1();
+                    ?>
                 </div>
                 <div class="swiper-slide">
-                    <?php echo mm_hero_item_video_2(); ?>
+                    <?php echo mm_hero_item_video_2();
+                    ?>
                 </div>
             </div>
             <!-- Opsional: Jika butuh page dots/pagination -->

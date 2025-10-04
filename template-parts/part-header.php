@@ -29,10 +29,6 @@ defined('ABSPATH') || die('No script kiddies please!');
             <nav id="header-menu-nav" class="">
                 <ul class="lns">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Akrobat</a></li>
-                    <li><a href="/">Security Fence</a></li>
-                    <li><a href="/">HVM</a></li>
-                    <li><a href="/">Habitap</a></li>
                     <li><a href="/">About Us</a></li>
                     <li><a href="/">Clients</a></li>
                     <li><a href="/">Contact Us</a></li>

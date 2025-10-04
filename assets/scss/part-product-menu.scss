@@ -29,20 +29,43 @@
 
       ul {
         width: 100%;
-        overflow: auto;
+        // overflow: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         flex-wrap: nowrap;
         li {
-          width: max-content;
-          margin: 0 20px;
-          a {
-            width: max-content;
-            display: block;
-            color: var(--col-primary-background);
-            font-weight: 500;
+          color: var(--col-primary-background);
+          font-weight: 500;
+          cursor: pointer;
+          &.parent {
+            margin: 0 20px;
+            position: relative;
+            ul {
+              display: none;
+            }
+
+            &.active {
+              ul {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: calc(100% + 20px);
+                z-index: 3;
+                background-color: var(--col-pallete-5);
+                padding: 10px;
+                li {
+                  font-weight: normal;
+                  margin: 0 0 20px 0;
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
           }
         }
       }

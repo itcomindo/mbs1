@@ -38,5 +38,74 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+    //---------------------------------------
+    // productMenu Start
+    //---------------------------------------
+    function productMenu1() {
+        jQuery('#product-menu-list li.parent').on('click', function (e) {
+            e.stopPropagation();
+            // change from fa-chevron-down to fa-chevron-up
+            jQuery(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            jQuery(this).toggleClass('active');
+            jQuery(this).siblings().removeClass('active');
+            jQuery(this).siblings().find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        });
+    }
+    // productMenu1();
+
+
+
+    function productMenu() {
+        // Menangani klik pada item menu utama
+        jQuery('#product-menu-list li.parent').on('click', function (e) {
+            e.stopPropagation();
+            var wasActive = jQuery(this).hasClass('active');
+
+            // Menutup semua item menu lain yang terbuka
+            jQuery('#product-menu-list li.parent').removeClass('active');
+            jQuery('#product-menu-list li.parent').find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+
+            // Buka atau tutup item menu yang diklik
+            if (!wasActive) {
+                jQuery(this).addClass('active');
+                jQuery(this).find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            }
+        });
+
+        // Menutup menu saat link di dalam menu diklik
+        jQuery('#product-menu-list li.parent a').on('click', function (e) {
+            e.stopPropagation(); // Menghentikan event agar tidak propegasi ke elemen parent
+            jQuery(this).closest('li.parent').removeClass('active');
+            jQuery(this).closest('li.parent').find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        });
+
+        // Menutup menu saat mengklik di mana pun di luar menu
+        jQuery(document).on('click', function () {
+            jQuery('#product-menu-list li.parent').removeClass('active');
+            jQuery('#product-menu-list li.parent').find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        });
+    }
+    productMenu();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //----------------------------------------
+    // productMenu End
+    //----------------------------------------
+
+
+
+
 
 });

@@ -1,8 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
 // /* Untuk semua scrollbar di halaman */
 // ::-webkit-scrollbar {
@@ -46,6 +46,12 @@ body {
   section,
   .section {
     width: 100%;
+
+    &.high {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
     .inner-section {
       width: 1366px;
       max-width: 100%;

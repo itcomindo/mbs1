@@ -19,9 +19,6 @@ add_action('wp_enqueue_scripts', function () {
 
 
     if (is_front_page()) {
-        //call flickity from cdn
-        // wp_enqueue_style('flickity', 'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css', array(), '2.3.0', 'all');
-        // wp_enqueue_script('flickity', 'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js', array('jquery'), '2.3.0', true);
 
         // call swipper from cdn
         wp_enqueue_style('swiper-css', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css', array(), '11.0.5', 'all');
@@ -29,6 +26,10 @@ add_action('wp_enqueue_scripts', function () {
 
         // call front-page.min.js from assets/js
         wp_enqueue_script('front-page', MBS_URL . '/assets/js/front-page.min.js', array('jquery', 'swiper-js'), MBS_VERSION, true);
+    }
+
+    if ('akrobat' === get_post_type()) {
+        wp_enqueue_style('template-post-akrobat', MBS_URL . '/assets/css/template-post-akrobat.css', array('global'), MBS_VERSION, 'all');
     }
 
     // call global.min.css from assets/css

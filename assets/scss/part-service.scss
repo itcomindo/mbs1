@@ -1,0 +1,19 @@
+#part-service {
+  .inner-section {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .service-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        .service-item > img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

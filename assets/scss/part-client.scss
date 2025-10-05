@@ -1,0 +1,29 @@
+#part-client {
+  padding-bottom: 80px;
+  .inner-section {
+    .container {
+      h2 {
+        text-align: center;
+      }
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .client-logo-wrapper {
+        display: block;
+        overflow: hidden;
+        .logo-item {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+          height: 55px;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

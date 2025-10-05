@@ -41,20 +41,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //---------------------------------------
     // productMenu Start
     //---------------------------------------
-    function productMenu1() {
-        jQuery('#product-menu-list li.parent').on('click', function (e) {
-            e.stopPropagation();
-            // change from fa-chevron-down to fa-chevron-up
-            jQuery(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
-            jQuery(this).toggleClass('active');
-            jQuery(this).siblings().removeClass('active');
-            jQuery(this).siblings().find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        });
-    }
-    // productMenu1();
-
-
-
     function productMenu() {
         // Menangani klik pada item menu utama
         jQuery('#product-menu-list li.parent').on('click', function (e) {
@@ -104,6 +90,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // productMenu End
     //----------------------------------------
 
+
+    // CLIENT LOGOS
+    let elem = document.querySelector('.client-logo-wrapper');
+    let flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'center',
+        contain: true,
+        pageDots: false,
+        autoPlay: 1500,
+        wrapAround: true,
+        prevNextButtons: false,
+    });
 
 
 
